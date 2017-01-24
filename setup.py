@@ -35,12 +35,13 @@ if sys.platform == "win32":
       ('_IDS_EXPORT', None),
       ('NPY_NO_DEPRECATED_API', 'NPY_1_7_API_VERSION')
     ],
-    'library_dirs': ['C:/Program Files/IDS/uEye/Develop/Lib'],
-    'libraries': ['ueye_api', 'ueye_tools'],
+    'library_dirs': ['sdk/Lib'],
+    'libraries': ['ueye_api_64', 'ueye_tools_64'],
     'include_dirs': [
       '.',
-      'C:/Program Files/IDS/uEye/Develop/include',
-      'C:/Anaconda3/Lib/site-packages/numpy/core/include'
+      'sdk/include',
+	  'C:/Python27/Lib/site-packages/numpy/core/include',
+      'C:/Python27/include'
     ]
   }
 else:
