@@ -1,0 +1,3 @@
+SET VS90COMNTOOLS=%VS100COMNTOOLS%
+python setup.py install
+PAUSE
